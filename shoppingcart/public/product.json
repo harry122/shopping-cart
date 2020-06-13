@@ -7,7 +7,8 @@
         "price": 270,
         "MRP": 300,
         "imageURL": "images/Choco_flakes.png",
-        "offerText": "10% off"
+        "offerText": "10% off",
+        "orderItem": 0
     },
     {
         "id": 2,
@@ -17,7 +18,8 @@
         "price": 47,
         "MRP": "50",
         "imageURL": "images/cup_nuddles.jpg",
-        "offerText": "5% Off"
+        "offerText": "5% Off",
+        "orderItem": 0
     },
     {
         "id": 3,
@@ -27,7 +29,8 @@
         "price": 170,
         "MRP": 200,
         "imageURL": "images/idli.jpg",
-        "offerText": "15% Off"
+        "offerText": "15% Off",
+        "orderItem": 0
     },
     {
         "id": 4,
@@ -37,7 +40,8 @@
         "price": 88,
         "MRP": 100,
         "imageURL": "images/atta.jpg",
-        "offerText": "12% Off"
+        "offerText": "12% Off",
+        "orderItem": 0
     },
     {
         "id": 5,
@@ -47,7 +51,8 @@
         "price": 450,
         "MRP": 500,
         "imageURL": "images/ghee.jpg",
-        "offerText": "10% Off"
+        "offerText": "10% Off",
+        "orderItem": 0
     },
     {
         "id": 6,
@@ -57,7 +62,8 @@
         "price": 270,
         "MRP": 300,
         "imageURL": "images/jam.jpg",
-        "offerText": "15% Off"
+        "offerText": "15% Off",
+        "orderItem": 0
     },
     {
         "id": 7,
@@ -67,7 +73,8 @@
         "price": 425,
         "MRP": 500,
         "imageURL": "images/ketchup.jpg",
-        "offerText": "15% Off"
+        "offerText": "15% Off",
+        "orderItem": 0
     },
     {
         "id": 8,
@@ -77,7 +84,8 @@
         "price": 340,
         "MRP": 400,
         "imageURL": "images/milkPower.jpg",
-        "offerText": "15% Off"
+        "offerText": "15% Off",
+        "orderItem": 0
     },
     {
         "id": 9,
@@ -87,7 +95,8 @@
         "price": 95,
         "MRP": 100,
         "imageURL": "images/emami_oil.jpg",
-        "offerText": "5% Off"
+        "offerText": "5% Off",
+        "orderItem": 0
     },
     {
         "id": 10,
@@ -97,6 +106,7 @@
         "price": 540,
         "MRP": 600,
         "imageURL": "images/coffee.jpg",
-        "offerText": "10% Off"
+        "offerText": "10% Off",
+        "orderItem": 0
     }
 ]

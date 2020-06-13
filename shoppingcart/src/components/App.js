@@ -2,13 +2,17 @@ import React, { Component } from 'react'
 import './App.css'
 import MainCotainer from './MainCotainer'
 import Footer from '../containers/Footer'
-import shopping from '../apis/shopping'
+import Firebase from 'firebase';
 
 class App extends Component {
-    state = {
+    constructor(props) {
+        super(props);
+    
+    this.state = {
         items: [],
         amount: 0,
         itemQuantity: 0
+    }
     }
 
     componentDidMount() {
@@ -16,15 +20,14 @@ class App extends Component {
     }
 
     Inputitems = () => {
-        shopping.get('/product.json')
-        .then(res => {
-            res.data.forEach(item => {
-                item.orderItem = 0
-                })
-            this.setState({
-                items: res.data
-            })
-        })
+        let rootRef = Firebase.database().ref('/');
+        rootRef.on('value', snapshot => {
+          const state = snapshot.val();
+          this.setState({
+              items: state
+          })
+        });
+        console.log(this.state.items);
     }
 
     increaseQuantity = (id, cost) => {
@@ -84,7 +87,7 @@ class App extends Component {
             return(
                 <div key={cart.id}>
                 <div className="container">
-                    <MainCotainer  data={cart} decreaseQuantity={this.decreaseQuantity} increaseQuantity={this.increaseQuantity} />
+                    <MainCotainer data={cart} decreaseQuantity={this.decreaseQuantity} increaseQuantity={this.increaseQuantity} />
                 </div>
                 <hr style={{ position: "relative",top: "15px"}}/>
 
@@ -95,6 +98,7 @@ class App extends Component {
 
     render() {
         const {itemQuantity, amount} = this.state;
+        console.log(this.state.items)
         return(
             <div className="app">
                   {this.renderList()}
