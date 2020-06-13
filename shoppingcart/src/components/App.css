@@ -1,0 +1,142 @@
+.app {
+  width: 80%;
+  min-height: 523px;
+  margin: 50px auto;
+  background: #FFFFFF;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+  border-radius: 6px;
+  overflow-x: visible;
+  overflow-y: visible;
+  }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    padding: 0 100px;
+    height: 200px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.image img {
+    margin-right: 150px;
+    width:200px;
+    height: 200px;
+  }
+
+.description {
+    width: 100%;
+}
+
+.description div {
+  display: block;
+  font-size: 16px;
+  padding: 4px;
+  width: 100%;
+}
+
+.description .title {
+    font-size: 25px;
+    font-weight: 500;
+    color: green;
+}   
+
+  .add_cart {
+    background-color: #4CAF50;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    font-size: 16px;
+    margin: 15px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    text-decoration: none;
+  }
+  
+  
+.quantity {
+    position: relative;
+    width: 100%;
+}
+
+.btns {
+    position: absolute;
+    left: 0; 
+    width: 100%;
+    bottom: 0;
+    padding-bottom: 12px;
+}
+
+  button[class*=btn] {
+    width: 40px;
+    height: 20px;
+    background-color: green;
+    border-radius: 120px;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    outline:none;  
+
+  }
+
+  .content {
+      width: 30px;
+      margin: 0 ;
+      border: none;
+      padding-left: 13px;
+      outline:none;  
+  }
+
+  .content  {
+      border:none
+  }
+
+  .not-active { 
+    pointer-events: none; 
+    cursor: default; 
+    text-decoration: none; 
+    background-color: black;
+} 
+
+@media (max-width: 800px) {
+    .app {
+        width: 100%;   
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+    .container {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      padding: 0 20px;
+    }
+    .description {
+      height: auto;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .description {
+      margin: 6px 10px;
+    }
+    .quantity {
+      width: 100%;
+      margin-left: 6px 0;
+    }
+    .image img {
+        margin-right: 20px;
+        width: 100px;
+        height: 120px;
+    }
+
+    .add_cart {
+        padding: 6px 10px;
+    }
+
+    .btns {
+        margin-bottom: 15px;
+    }
+  }
+
