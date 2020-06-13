@@ -6,13 +6,11 @@ import * as serviceWorker from './serviceWorker';
 import * as firebase from 'firebase'
 
 var config ={
-  apiKey: "AIzaSyBT3yXo7cxcH8mgem1DtYw7QTXubIkg0to",
-  authDomain: "shopping-cart-f503a.firebaseapp.com",
-  databaseURL: "https://shopping-cart-f503a.firebaseio.com",
-  projectId: "shopping-cart-f503a",
-  storageBucket: "shopping-cart-f503a.appspot.com",
-  messagingSenderId: "131549464462",
-  appId: "1:131549464462:web:2a4be04fb0ab1ecc7e46df",
+  apiKey: "AIzaSyAmNAt5OygSnmkSKlrinVw7qJh8AQB1QpI",
+    authDomain: "shopping-cart-f8a2a.firebaseapp.com",
+    databaseURL: "https://shopping-cart-f8a2a.firebaseio.com",
+    projectId: "shopping-cart-f8a2a",
+    storageBucket: "shopping-cart-f8a2a.appspot.com",
 };
 
 firebase.initializeApp(config);
