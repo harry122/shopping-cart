@@ -27,7 +27,6 @@ class App extends Component {
               items: state
           })
         });
-        console.log(this.state.items);
     }
 
     increaseQuantity = (id, cost) => {
@@ -98,7 +97,6 @@ class App extends Component {
 
     render() {
         const {itemQuantity, amount} = this.state;
-        console.log(this.state.items)
         return(
             <div className="app">
                   {this.renderList()}
